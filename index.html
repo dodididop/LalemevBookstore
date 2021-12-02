@@ -1,0 +1,93 @@
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>LALEMEV BOOKSTORE</title>
+		<style>
+			body { 
+					background-image: url('https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+					background-repeat: no-repeat;
+				}
+			.index{
+					padding: 5px;
+					width: 500px;
+				}					
+			.sub {
+					background-color:#FAEBD7;
+					padding: 15px;
+					margin: 4px;
+					margin-right:10px;
+					border-radius: 12px;
+					border: 2px solid #e7e7e7;
+					font-weight:bold;
+					width:130px;		 
+				}		 
+			.find { background-color:white;
+					padding: 15px 32px;
+					margin: 4px 2px;
+					color: black;
+					border-radius: 12px;
+					border: 2px solid #e7e7e7;
+					font-weight:bold;
+					font-style:italic;		 
+					}		
+			.brand { color: #FAEBD7;
+					letter-spacing:5px;
+					text-shadow: 3px 6px 2px rgba(0, 0, 0, .3);
+					font-size:60px;
+					text-align:center;
+					font-family:gabriola;
+					font-weight:bold;
+					}	
+			.foot {
+					position: fixed;
+					bottom: 0px;
+					left: 1050px;
+					width: 100%;
+					height: 10px; 
+					padding:15px;
+					font-style:italic;
+					text-decoration:underline;
+					font-weight:bold;	
+					}
+				</style>
+	</head>	
+	<body>
+		<div>
+			<img src="https://www.hareketligifler.net/data/media/559/isik-hareketli-resim-0098.gif" border="0" alt="isik-hareketli-resim-0098"/>
+			<p class="brand">LALEMEV BOOKSTORE</p>		
+		</div>
+		<div align="center">		
+			<form class="index" action="report_book.php" method="POST"> <!--to send report_book.php with post method.-->
+				<table>		
+						<tr>
+						<td><input type="text" class="find" placeholder="Find..." name="title" ></td>
+						<td><input class="sub" type="submit" value="BOOK"></td>
+					</tr>
+				</table>		
+						<br><br>
+			</form>
+			
+			<form class="index" action="report_author.php" method="POST"> <!--to send report_author.php with post method.-->	
+				<table>
+					<tr>
+						<td><input type="text" class="find" placeholder="Find..." name="author"></td>
+						<td><input class="sub" type="submit" value="AUTHOR"></td>
+					</tr>
+				</table>
+						<br><br>
+			</form>
+			<form class="index" action="report_rate.php" method="POST"><!--to send report_rate.php with post method.-->		
+				<table>
+					<tr>
+						<td><input type="number" class="find" placeholder="Find..." name="average_rating"></td>
+						<td><input class="sub" type="submit" value="AVERAGE RATE"></td>
+					</tr>				
+				</table>
+			</form>				
+		</div>	
+		<footer class="foot">
+			Diğdem Çokyaşar -
+			Hilal Nur İnce -
+			Merve Işıksaçan 
+		</footer>
+	</body>
+</html>
